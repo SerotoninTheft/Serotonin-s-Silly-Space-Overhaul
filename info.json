@@ -1,0 +1,10 @@
+{
+  "name": "serotonin-space-overhaul",
+  "version": "0.0.1",
+  "title": "Serotonin's Silly Space Overhaul",
+  "author": "GermanCrow",
+  "description": "Overhaul mod changes nearly all recipes in Vanilla and Space Age to be far more complicated, with about the same cost. Designed to be a challenge.",
+  "factorio_version": "2.1",
+  "dependencies": ["base >= 2.1.0"],
+  "thumbnail": "images/thumbnail.png"
+}
