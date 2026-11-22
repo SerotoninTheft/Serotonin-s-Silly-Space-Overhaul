@@ -1268,7 +1268,7 @@ data:extend({
         {type = "item", name = "stone-brick", amount = 2},
         {type = "item", name = "programmable-speaker", amount = 1}
       },
-      results = {{type = "item", name = "arithmetic-combinator", amount = 4}},
+      results = {{type = "item", name = "arithmetic-combinator", amount = 8}},
       energy_required = 0.5 * 2,
       enabled = false
     },
@@ -1282,7 +1282,7 @@ data:extend({
         {type = "item", name = "display-panel", amount = 1},
         {type = "item", name = "steel-plate", amount = 1},
       },
-      results = {{type = "item", name = "decider-combinator", amount = 4}},
+      results = {{type = "item", name = "decider-combinator", amount = 8}},
       energy_required = 0.5 * 2,
       enabled = false
     },
@@ -1297,7 +1297,7 @@ data:extend({
         {type = "item", name = "decider-combinator", amount = 1},
         {type = "item", name = "power-switch", amount = 1},
       },
-      results = {{type = "item", name = "constant-combinator", amount = 4}},
+      results = {{type = "item", name = "constant-combinator", amount = 8}},
       energy_required = 0.5 * 2,
       enabled = false
     },
