@@ -474,6 +474,7 @@ data:extend({
     {
       type = "recipe",
       name = "transport-belt",
+      categories = {"crafting", "metallurgy"},
       ingredients = {
         {type = "item", name = "copper-cable", amount = 2},
         {type = "item", name = "stone", amount = 1},
@@ -487,7 +488,7 @@ data:extend({
     {
       type = "recipe",
       name = "fast-transport-belt",
-      categories = {"crafting-with-fluid"},
+      categories = {"crafting-with-fluid", "metallurgy"},
       ingredients = {
         {type = "item", name = "engine-unit", amount = 1},
         {type = "item", name = "transport-belt", amount = 4},
@@ -501,7 +502,7 @@ data:extend({
     {
       type = "recipe",
       name = "express-transport-belt",
-      categories = {"crafting-with-fluid"},
+      categories = {"crafting-with-fluid", "metallurgy"},
       ingredients = {
         {type = "item", name = "electric-engine-unit", amount = 2},
         {type = "fluid", name = "lubricant", amount = 8},
@@ -515,6 +516,7 @@ data:extend({
     {
       type = "recipe",
       name = "underground-belt",
+      categories = {"crafting", "metallurgy"},
       ingredients = {
         {type = "item", name = "copper-cable", amount = 1},
         {type = "item", name = "stone", amount = 10},
@@ -533,7 +535,7 @@ data:extend({
     {
       type = "recipe",
       name = "fast-underground-belt",
-      categories = {"crafting-with-fluid"},
+      categories = {"crafting-with-fluid", "metallurgy"},
       ingredients = {
         {type = "item", name = "engine-unit", amount = 10},
         {type = "item", name = "transport-belt", amount = 24},
@@ -548,7 +550,7 @@ data:extend({
     {
       type = "recipe",
       name = "express-underground-belt",
-      categories = {"crafting-with-fluid"},
+      categories = {"crafting-with-fluid", "metallurgy"},
       ingredients = {
         {type = "item", name = "electric-engine-unit", amount = 4},
         {type = "fluid", name = "lubricant", amount = 50},
@@ -563,6 +565,7 @@ data:extend({
     {
       type = "recipe",
       name = "splitter",
+      categories = {"crafting", "metallurgy"},
       ingredients = {
         {type = "item", name = "copper-cable", amount = 10},
         {type = "item", name = "stone", amount = 1},
@@ -579,7 +582,7 @@ data:extend({
     {
       type = "recipe",
       name = "fast-splitter",
-      categories = {"crafting-with-fluid"},
+      categories = {"crafting-with-fluid", "metallurgy"},
       ingredients = {
         {type = "item", name = "engine-unit", amount = 2},
         {type = "item", name = "fast-transport-belt", amount = 4},
@@ -595,7 +598,7 @@ data:extend({
     {
       type = "recipe",
       name = "express-splitter",
-      categories = {"crafting-with-fluid"},
+      categories = {"crafting-with-fluid", "metallurgy"},
       ingredients = {
         {type = "item", name = "electric-engine-unit", amount = 2},
         {type = "fluid", name = "lubricant", amount = 30},
