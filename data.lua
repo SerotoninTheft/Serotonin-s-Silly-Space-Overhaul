@@ -25,6 +25,7 @@ data:extend({
   {
     type = "recipe",
     name = "copper-cable",
+    categories = {"crafting", "electromagnetics"},
     ingredients = {
       {type = "item", name = "copper-plate", amount = 3}
     },
@@ -37,6 +38,7 @@ data:extend({
   {
     type = "recipe",
     name = "electronic-circuit",
+    categories = {"crafting", "electromagnetics"},
     ingredients = {
       {type = "item", name = "stone-brick", amount = 2},
       {type = "item", name = "copper-plate", amount = 3},
@@ -53,7 +55,7 @@ data:extend({
   {
     type = "recipe",
     name = "advanced-circuit",
-    categories = {"crafting-with-fluid"},
+    categories = {"crafting-with-fluid", "electromagnetics"},
     ingredients = {
       {type = "item", name = "concrete", amount = 3},
       {type = "item", name = "copper-cable", amount = 60},
@@ -73,7 +75,7 @@ data:extend({
   {
     type = "recipe",
     name = "processing-unit",
-    categories = {"crafting-with-fluid"},
+    categories = {"crafting-with-fluid", "electromagnetics"},
     ingredients = {
       {type = "item", name = "arithmetic-combinator", amount = 2},
       {type = "item", name = "small-lamp", amount = 2},
@@ -245,6 +247,7 @@ data:extend({
     {
       type = "recipe",
       name = "efficiency-module",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "electronic-circuit", amount = 2},
         {type = "item", name = "advanced-circuit", amount = 2},
@@ -260,6 +263,7 @@ data:extend({
     {
       type = "recipe",
       name = "efficiency-module-2",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "efficiency-module", amount = 3},
         {type = "item", name = "processing-unit", amount = 3},
@@ -276,6 +280,7 @@ data:extend({
     {
       type = "recipe",
       name = "efficiency-module-3",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "efficiency-module-2", amount = 3},
         {type = "item", name = "barrel", amount = 2},
@@ -297,6 +302,7 @@ data:extend({
     {
       type = "recipe",
       name = "productivity-module",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "electronic-circuit", amount = 2},
         {type = "item", name = "advanced-circuit", amount = 2},
@@ -312,6 +318,7 @@ data:extend({
     {
       type = "recipe",
       name = "productivity-module-2",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "productivity-module", amount = 2},
         {type = "item", name = "processing-unit", amount = 3},
@@ -328,6 +335,7 @@ data:extend({
     {
       type = "recipe",
       name = "productivity-module-3",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "productivity-module-2", amount = 3},
         {type = "item", name = "barrel", amount = 2},
@@ -343,6 +351,7 @@ data:extend({
     {
       type = "recipe",
       name = "speed-module",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "electronic-circuit", amount = 2},
         {type = "item", name = "advanced-circuit", amount = 2},
@@ -374,6 +383,7 @@ data:extend({
     {
       type = "recipe",
       name = "speed-module-2",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "speed-module", amount = 3},
         {type = "item", name = "processing-unit", amount = 3},
@@ -390,6 +400,7 @@ data:extend({
     {
       type = "recipe",
       name = "speed-module-3",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "speed-module-2", amount = 3},
         {type = "item", name = "barrel", amount = 2},
@@ -684,6 +695,7 @@ data:extend({
     {
       type = "recipe",
       name = "small-electric-pole",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "iron-stick", amount = 2},
         {type = "item", name = "stone", amount = 1},
@@ -701,6 +713,7 @@ data:extend({
     {
       type = "recipe",
       name = "medium-electric-pole",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "steel-plate", amount = 2},
         {type = "item", name = "copper-cable", amount = 4},
@@ -717,6 +730,7 @@ data:extend({
     {
       type = "recipe",
       name = "big-electric-pole",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "steel-plate", amount = 5},
         {type = "item", name = "copper-plate", amount = 5},
@@ -734,6 +748,7 @@ data:extend({
     {
       type = "recipe",
       name = "substation",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "steel-plate", amount = 10},
         {type = "item", name = "advanced-circuit", amount = 5},
@@ -929,7 +944,7 @@ data:extend({
     {
       type = "recipe",
       name = "solar-panel",
-      categories = {"crafting-with-fluid"},
+      categories = {"crafting-with-fluid", "electromagnetics"},
       ingredients = {
         {type = "item", name = "copper-plate", amount = 6},
         {type = "item", name = "electronic-circuit", amount = 3},
@@ -945,7 +960,7 @@ data:extend({
     {
       type = "recipe",
       name = "accumulator",
-      categories = {"crafting-with-fluid"},
+      categories = {"crafting-with-fluid", "electromagnetics"},
       ingredients = {
         {type = "item", name = "steel-plate", amount = 1},
         {type = "item", name = "battery", amount = 4},
@@ -1105,6 +1120,7 @@ data:extend({
     {
       type = "recipe",
       name = "beacon",
+      categories = {"crafting", "electromagnetics"},
       ingredients = {
         {type = "item", name = "speed-module", amount = 1},
         {type = "item", name = "productivity-module", amount = 1},
@@ -2076,7 +2092,47 @@ data:extend({
     results = {{type = "item", name = "rocket-part", amount = 5}},
     energy_required = 10,
     enabled = false
-  }
+  },
+
+
+  {
+    type = "recipe",
+    name = "space-science-pack",
+    icon = "__base__/graphics/icons/space-science-pack.png",
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "iron-plate", amount = 2},
+      {type = "item", name = "carbon", amount = 1},
+      {type = "item", name = "ice", amount = 1},
+      {type = "item", name = "chemical-science-pack", amount = 50},
+    },
+    surface_conditions =
+    {
+      {
+        property = "gravity",
+        min = 0,
+        max = 0
+      }
+    },
+    energy_required = 10,
+    results =
+    {
+      {type = "item", name = "space-science-pack", amount = 10},
+        {type = "item", name = "sulfur", amount = 10, independent_probability = 0.99},
+        {type = "item", name = "engine-unit", amount = 15, independent_probability = 0.99},
+        {type = "item", name = "advanced-circuit", amount = 10, independent_probability = 0.99},
+        {type = "item", name = "assembling-machine-2", amount = 5, independent_probability = 0.99},
+        {type = "item", name = "accumulator", amount = 10, independent_probability = 0.99},
+        {type = "item", name = "belt-immunity-equipment", amount = 5, independent_probability = 0.99},
+        {type = "item", name = "speed-module", amount = 5, independent_probability = 0.99},
+        {type = "item", name = "solar-panel", amount = 5, independent_probability = 0.99},
+    },
+    allow_productivity = true,
+    main_product = "space-science-pack"
+  },
+
+
 })
 
 require("technology")

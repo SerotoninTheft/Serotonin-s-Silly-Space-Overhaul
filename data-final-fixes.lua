@@ -13,6 +13,7 @@ data:extend({
     },
     results = {{type = "item", name = "rocket-part", amount = 1}},
     energy_required = 10,
-    enabled = false
+    enabled = false,
+    allow_productivity = true
   }
 })

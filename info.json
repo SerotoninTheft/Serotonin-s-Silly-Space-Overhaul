@@ -5,6 +5,6 @@
   "author": "GermanCrow",
   "description": "Overhaul mod changes nearly all recipes in Vanilla and Space Age to be far more complicated, with about the same cost. Designed to be a challenge.",
   "factorio_version": "2.1",
-  "dependencies": ["base >= 2.1.0"],
+  "dependencies": ["base >= 2.1.0","space-age >= 0.2.0"],
   "thumbnail": "images/thumbnail.png"
 }
