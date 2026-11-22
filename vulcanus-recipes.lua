@@ -25,7 +25,8 @@ data:extend({
         energy_required = 2,
         results =
         {
-        {type = "fluid", name = "steam", amount = 4000, temperature = 500}
+        {type = "fluid", name = "steam", amount = 4000, temperature = 500},
+        {type = "item", name = "sulfur", amount = 25},
         },
         allow_productivity = false,
         allow_decomposition = false,

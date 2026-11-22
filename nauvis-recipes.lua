@@ -483,6 +483,7 @@ data:extend({
         {type = "item", name = "iron-stick", amount = 3}
       },
       results = {{type = "item", name = "transport-belt", amount = 8}},
+    allow_productivity = true,
       energy_required = 0.5 * 8
     },
     {
@@ -496,6 +497,7 @@ data:extend({
         {type = "fluid", name = "steam", amount = 15}
       },
       results = {{type = "item", name = "fast-transport-belt", amount = 5}},
+    allow_productivity = true,
       energy_required = 2 * 5,
       enabled = false
     },
@@ -510,6 +512,7 @@ data:extend({
         {type = "item", name = "fast-transport-belt", amount = 2}
       },
       results = {{type = "item", name = "express-transport-belt", amount = 3}},
+    allow_productivity = true,
       energy_required = 2 * 3,
       enabled = false
     },
