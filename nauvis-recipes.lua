@@ -287,7 +287,8 @@ data:extend({
         {type = "item", name = "barrel", amount = 2},
         {type = "item", name = "refined-concrete", amount = 1},
         {type = "item", name = "solar-panel", amount = 2},
-        {type = "item", name = "battery-equipment", amount = 2}
+        {type = "item", name = "battery-equipment", amount = 2},
+        {type = "item", name = "spoilage", amount = 20},
       },
       results = {{type = "item", name = "efficiency-module-3", amount = 1}},
     allow_productivity = true,
@@ -341,6 +342,7 @@ data:extend({
         {type = "item", name = "productivity-module-2", amount = 3},
         {type = "item", name = "barrel", amount = 2},
         {type = "item", name = "refined-concrete", amount = 1},
+        {type = "item", name = "biter-egg", amount = 1},
         {type = "item", name = "processing-unit", amount = 1},
         {type = "item", name = "lab", amount = 1}
       },
@@ -390,7 +392,7 @@ data:extend({
         {type = "item", name = "advanced-circuit", amount = 2},
         {type = "item", name = "solar-panel", amount = 1},
         {type = "item", name = "explosives", amount = 1},
-        {type = "item", name = "battery-mk2-equipment", amount = 1}
+        {type = "item", name = "battery-mk2-equipment", amount = 4}
       },
       results = {{type = "item", name = "quality-module-2", amount = 1}},
     allow_productivity = true,
@@ -424,13 +426,35 @@ data:extend({
         {type = "item", name = "barrel", amount = 2},
         {type = "item", name = "refined-concrete", amount = 1},
         {type = "item", name = "processing-unit", amount = 1},
-        {type = "item", name = "assembling-machine-3", amount = 1}
+        {type = "item", name = "assembling-machine-3", amount = 1},
+        {type = "item", name = "tungsten-carbide", amount = 1},
+        {type = "item", name = "tungsten-plate", amount = 1},
+
       },
       results = {{type = "item", name = "speed-module-3", amount = 1}},
     allow_productivity = true,
       energy_required = 60 * 1,
       enabled = false
     },
+    {
+      type = "recipe",
+      name = "quality-module-3",
+      categories = {"crafting", "electromagnetics"},
+      ingredients = {
+        {type = "item", name = "quality-module-2", amount = 3},
+        {type = "item", name = "barrel", amount = 2},
+        {type = "item", name = "refined-concrete", amount = 1},
+        {type = "item", name = "processing-unit", amount = 1},
+        {type = "item", name = "assembling-machine-3", amount = 1},
+        {type = "item", name = "superconductor", amount = 1},
+
+      },
+      results = {{type = "item", name = "quality-module-3", amount = 1}},
+    allow_productivity = true,
+      energy_required = 60 * 1,
+      enabled = false
+    },
+
     {
       type = "recipe",
       name = "iron-chest",
@@ -1495,7 +1519,7 @@ data:extend({
   {
     type = "recipe",
     name = "battery",
-    categories = {"crafting-with-fluid"},
+    categories = {"crafting-with-fluid", "electromagnetics"},
     energy_required = 5,
     enabled = false,
     ingredients =
@@ -1640,7 +1664,7 @@ data:extend({
   {
     type = "recipe",
     name = "battery-equipment",
-    categories = {"crafting-with-fluid"},
+    categories = {"crafting-with-fluid", "electromagnetics"},
     enabled = false,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 5},
@@ -1653,7 +1677,7 @@ data:extend({
   {
     type = "recipe",
     name = "battery-mk2-equipment",
-    categories = {"crafting-with-fluid"},
+    categories = {"crafting-with-fluid", "electromagnetics"},
     enabled = false,
     ingredients = {
       {type = "item", name = "processing-unit", amount = 3},
@@ -1662,7 +1686,7 @@ data:extend({
       {type = "fluid", name = "sulfuric-acid", amount = 20},
       {type = "item", name = "accumulator", amount = 1}
     },
-    results = {{type = "item", name = "battery-mk2-equipment", amount = 1}},
+    results = {{type = "item", name = "battery-mk2-equipment", amount = 5}},
     allow_productivity = true,
   },
   {
@@ -2054,21 +2078,6 @@ data:extend({
     energy_required = 10,
     enabled = false,
     allow_productivity = true
-  },
-  {
-    type = "recipe",
-    name = "rocket-part",
-    categories = {"rocket-building"},
-    ingredients = {
-      {type = "item", name = "processing-unit", amount = 3},
-      {type = "item", name = "rocket-fuel", amount = 5},
-      {type = "item", name = "selector-combinator", amount = 2},
-      {type = "item", name = "low-density-structure", amount = 4},
-      {type = "item", name = "uranium-fuel-cell", amount = 1}
-    },
-    results = {{type = "item", name = "rocket-part", amount = 5}},
-    energy_required = 10,
-    enabled = false
   },
   {
     type = "recipe",

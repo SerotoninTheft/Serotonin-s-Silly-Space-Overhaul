@@ -205,5 +205,111 @@ data:extend({
     main_product = "electromagnetic-science-pack",
     allow_productivity = true
   },
+  {
+    type = "recipe",
+    name = "battery-mk3-equipment",
+    categories = {"electromagnetics"},
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "battery-mk2-equipment", amount = 15},
+      {type = "item", name = "supercapacitor", amount = 10},
+      {type = "item", name = "processing-unit", amount = 2},
+      {type = "item", name = "superconductor", amount = 5},
+      {type = "fluid", name = "electrolyte", amount = 50},
+      {type = "item", name = "holmium-plate", amount = 15},
+
+    },
+    results = {{type="item", name="battery-mk3-equipment", amount=25}}
+  },
+  {
+    type = "recipe",
+    name = "energy-shield-mk2-equipment",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "energy-shield-equipment", amount = 5},
+      {type = "item", name = "processing-unit", amount = 5},
+      {type = "item", name = "low-density-structure", amount = 5},
+      {type = "item", name = "superconductor", amount = 5},
+    },
+    results = {{type="item", name="energy-shield-mk2-equipment", amount=3}}
+  },
+  {
+    type = "recipe",
+    name = "lightning-collector",
+    categories = {"electromagnetics"},
+    surface_conditions =
+    {
+      {
+        property = "magnetic-field",
+        min = 99,
+        max = 99
+      }
+    },
+    energy_required = 5,
+    ingredients =
+    {
+      {type = "item", name = "lightning-rod", amount = 1},
+      {type = "item", name = "battery-mk2-equipment", amount = 2},
+      {type = "item", name = "supercapacitor", amount = 4},
+      {type = "item", name = "accumulator", amount = 1},
+      {type = "fluid", name = "electrolyte", amount = 80},
+    },
+    results = {{type="item", name="lightning-collector", amount=2}},
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "mech-armor",
+    enabled = false,
+    energy_required = 60,
+    ingredients =
+    {
+      {type = "item", name = "power-armor-mk2", amount = 1},
+      {type = "item", name = "holmium-plate", amount = 200},
+      {type = "item", name = "processing-unit", amount = 100},
+      {type = "item", name = "superconductor", amount = 50},
+      {type = "item", name = "supercapacitor", amount = 50},
+      {type = "item", name = "speed-module-2", amount = 15},
+      {type = "item", name = "efficiency-module-2", amount = 15},
+      {type = "item", name = "productivity-module-2", amount = 15}
+
+    },
+    results = {{type="item", name="mech-armor", amount=1}}
+  },
+  {
+    type = "recipe",
+    name = "personal-roboport-mk2-equipment",
+    enabled = false,
+    energy_required = 20,
+    ingredients =
+    {
+      {type = "item", name = "personal-roboport-equipment", amount = 5},
+      {type = "item", name = "processing-unit", amount = 20},
+      {type = "item", name = "low-density-structure", amount = 20},
+      {type = "item", name = "roboport", amount = 20}
+    },
+    results = {{type="item", name="personal-roboport-mk2-equipment", amount=5}}
+  },
+  {
+    type = "recipe",
+    name = "tesla-ammo",
+    categories = {"electromagnetics"},
+    energy_required = 30,
+    ingredients =
+    {
+      {type = "item", name = "supercapacitor", amount = 1},
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "superconductor", amount = 2},
+      {type = "item", name = "battery", amount = 4},
+      {type = "fluid", name = "electrolyte", amount = 10},
+    },
+    results = {{type="item", name="tesla-ammo", amount=10}},
+    enabled = false
+  },
+
 
 })

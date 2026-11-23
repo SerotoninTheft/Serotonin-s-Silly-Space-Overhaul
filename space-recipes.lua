@@ -188,4 +188,27 @@ data:extend({
         quaternary = {r = 0.683, g = 0.915, b = 1.000, a = 0.502}, -- #aee9ff80
         }
     },
+    {
+        type = "recipe",
+        name = "rocket",
+        categories = {"chemistry"},
+        enabled = false,
+        energy_required = 10,
+        ingredients =
+        {
+            {type = "item", name = "explosives", amount = 15},
+            {type = "item", name = "steel-plate", amount = 5},
+            {type = "item", name = "grenade", amount = 5},
+            {type = "item", name = "tungsten-plate", amount = 10},
+            {type = "fluid", name = "thruster-fuel", amount = 100},
+            {type = "fluid", name = "thruster-oxidizer", amount = 100},
+        },
+        results = {
+            {type="item", name="rocket", amount=50},
+            {type = "item", name = "tungsten-plate", amount = 10, independent_probability=0.99,ignored_by_productivity=10},
+            {type="fluid", name="steam", amount=60},
+            {type="fluid", name="crude-oil", amount=30},
+        }
+    },
+
 })

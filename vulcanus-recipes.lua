@@ -331,4 +331,128 @@ data:extend({
         allow_productivity = false,
         auto_recycle = false,
     },
+
+    {
+        type = "recipe",
+        name = "turbo-transport-belt",
+        categories = {"metallurgy"},
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 4000,
+            max = 4000
+        }
+        },
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "tungsten-plate", amount = 5},
+        {type = "item", name = "express-transport-belt", amount = 3},
+        {type = "item", name = "electric-engine-unit", amount = 3},
+        {type= "fluid", name = "lubricant", amount = 20},
+        {type= "fluid", name = "molten-iron", amount = 20},
+        },
+        results = {{type="item", name="turbo-transport-belt", amount=3}},
+        auto_recycle = true,
+    },
+    {
+        type = "recipe",
+        name = "turbo-underground-belt",
+        energy_required = 2,
+        categories = {"metallurgy"},
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 4000,
+            max = 4000
+        }
+        },
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "tungsten-plate", amount = 40},
+        {type = "item", name = "express-underground-belt", amount = 2},
+        {type = "item", name = "electric-engine-unit", amount = 6},
+        {type = "fluid", name = "lubricant", amount = 40},
+        {type = "fluid", name = "molten-iron", amount = 40},
+        },
+        results = {{type="item", name="turbo-underground-belt", amount=4}},
+        auto_recycle = true,
+    },
+    {
+        type = "recipe",
+        name = "turbo-splitter",
+        categories = {"metallurgy"},
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 4000,
+            max = 4000
+        }
+        },
+        enabled = false,
+        energy_required = 2,
+        ingredients =
+        {
+        {type = "item", name = "express-splitter", amount = 3},
+        {type = "item", name = "tungsten-plate", amount = 15},
+        {type = "item", name = "processing-unit", amount = 2},
+        {type = "item", name = "electric-engine-unit", amount = 3},
+        {type = "fluid", name = "lubricant", amount = 80},
+        {type = "fluid", name = "molten-iron", amount = 20},
+        },
+        results = {{type="item", name="turbo-splitter", amount=3}},
+        auto_recycle = true,
+    },
+    {
+        type = "recipe",
+        name = "coal-liquefaction",
+        categories = {"oil-processing"},
+        enabled = false,
+        energy_required = 5,
+        ingredients =
+        {
+        {type = "item", name = "coal", amount = 20},
+        {type = "fluid", name = "heavy-oil", amount = 25, ignored_by_stats = 25},
+        {type = "fluid", name = "steam", amount = 50},
+        {type = "item", name = "carbon", amount = 5},
+        {type = "item", name = "sulfur", amount = 10},
+        },
+        results =
+        {
+        {type = "fluid", name = "heavy-oil", amount = 300, ignored_by_stats = 25, ignored_by_productivity = 25},
+        {type = "fluid", name = "light-oil", amount = 50},
+        {type = "fluid", name = "petroleum-gas", amount = 30},
+        {type = "item", name = "sulfur", amount = 10, independent_probability = 0.75, ignored_by_productivity = 10},
+        },
+        allow_productivity = true,
+        icon = "__base__/graphics/icons/fluid/coal-liquefaction.png",
+        subgroup = "fluid-recipes",
+        order = "a[oil-processing]-c[coal-liquefaction]",
+        allow_decomposition = false,
+        crafting_machine_tint =
+        {
+        primary = {r = 0.406, g = 0.095, b = 0.000, a = 1.000}, -- #671800ff
+        }
+    },
+    {
+        type = "recipe",
+        name = "cliff-explosives",
+        categories = {"metallurgy"},
+        enabled = false,
+        energy_required = 8,
+        ingredients =
+        {
+        {type = "item", name = "explosives", amount = 15},
+        {type = "item", name = "grenade", amount = 3},
+        {type = "item", name = "barrel", amount = 5},
+        {type = "fluid", name = "sulfuric-acid", amount = 100},
+        {type = "fluid", name = "heavy-oil", amount = 50}
+        },
+        results = {{type="item", name="cliff-explosives", amount=4}}
+    },
+
 })

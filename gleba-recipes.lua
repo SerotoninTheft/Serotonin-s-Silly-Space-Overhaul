@@ -502,4 +502,274 @@ data:extend({
         secondary = {255, 233, 163, 1}
         }
     },
+    {
+        type = "recipe",
+        name = "carbon-fiber",
+        categories = {"organic"},
+        subgroup = "agriculture-products",
+        order = "a[organic-products]-h[carbon-fiber]",
+        auto_recycle = false,
+        energy_required = 20,
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "yumako-mash", amount = 20},
+        {type = "item", name = "carbon", amount = 4},
+        {type = "item", name = "plastic-bar", amount = 3},
+        {type = "item", name = "bioflux", amount = 2},
+        {type = "item", name = "coal", amount = 2}
+        },
+        results = {{type="item", name="carbon-fiber", amount=8}},
+        allow_productivity = true,
+        crafting_machine_tint =
+        {
+        primary = {r = 9, g = 0, b = 220, a = 1.000},
+        secondary = {r = 0, g = 0, b = 0, a = 1.000},
+        },
+    },
+    {
+        type = "recipe",
+        name = "tree-seed",
+        categories = {"organic", "crafting"},
+        subgroup = "nauvis-agriculture",
+        order = "a[seeds]-a[tree-seed]",
+        enabled = false,
+        allow_productivity = true,
+        energy_required = 20,
+        ingredients = {
+            {type = "item", name = "wood", amount = 10},
+            {type = "item", name = "bioflux", amount = 2},
+            {type = "item", name = "nutrients", amount = 10},
+        },
+        surface_conditions =
+        { -- tree seeds can only be planted on nauvis
+        {
+            property = "pressure",
+            min = 1000,
+            max = 1000
+        }
+        },
+        results =
+        {
+        {type = "item", name = "tree-seed", amount = 25},
+        },
+        auto_recycle = false,
+        crafting_machine_tint =
+        {
+        primary = {r = 0.442, g = 0.205, b = 0.090, a = 1.000}, -- #703416ff
+        secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
+        }
+    },
+    {
+        type = "recipe",
+        name = "fish-breeding",
+        icon = "__space-age__/graphics/icons/fish-breeding.png",
+        categories = {"organic", "chemistry"},
+        subgroup = "nauvis-agriculture",
+        order = "b[nauvis-agriculture]-b[fish-breeding]",
+        auto_recycle = false,
+        energy_required = 24,
+        enabled = false,
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 1000,
+            max = 1000
+        }
+        },
+        ingredients =
+        {
+            {type = "item", name = "raw-fish", amount = 20, ignored_by_stats = 20},
+            {type = "item", name = "nutrients", amount = 100},
+            {type = "item", name = "yumako", amount = 15},
+            {type = "item", name = "bioflux", amount = 3},
+            {type = "item", name = "tree-seed", amount = 10},
+            {type = "fluid", name = "water", amount = 1000}
+        },
+        results =
+        {
+        {type = "item", name = "raw-fish", amount = 125, ignored_by_stats = 20, ignored_by_productivity = 20, reset_freshness_on_craft = true}
+        },
+        allow_productivity = false,
+        allow_quality = false,
+        crafting_machine_tint =
+        {
+        primary = {0, 0, 1, 1},
+        secondary = {0, 0, 1, 1}
+        },
+    },
+    {
+        type = "recipe",
+        name = "capture-robot-rocket",
+        energy_required = 10,
+        ingredients =
+        {
+        {type = "item", name = "flying-robot-frame", amount = 1},
+        {type = "item", name = "steel-plate", amount = 2},
+        {type = "item", name = "bioflux", amount = 20},
+        {type = "item", name = "raw-fish", amount = 20},
+        {type = "item", name = "processing-unit", amount = 2},
+        },
+        results = {{type="item", name="capture-robot-rocket", amount=1}},
+        enabled = false
+    },
+    {
+        type = "recipe",
+        name = "biter-egg",
+        icon = "__space-age__/graphics/icons/biter-egg.png",
+        categories = {"captive-spawner-process"},
+        order = "c[eggs]-a[biter-egg]",
+        hide_from_player_crafting = true,
+        auto_recycle = false,
+        preserve_products_in_machine_output = true,
+        energy_required = 10,
+        ingredients = {
+            {type = "item", name = "nutrients", amount = 10},
+            {type = "item", name = "raw-fish", amount = 50},
+        },
+        results =
+        {
+            {type = "item", name = "biter-egg", amount = 10}
+        },
+        enabled = false
+    },
+    {
+        type = "recipe",
+        name = "artificial-yumako-soil",
+        icon = "__space-age__/graphics/icons/artificial-yumako-soil.png",
+        categories = {"crafting"},
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 2000,
+            max = 2000
+        }
+        },
+        enabled = false,
+        allow_productivity = true,
+        energy_required = 2,
+        ingredients =
+        {
+        {type = "item", name = "yumako-seed", amount = 2},
+        {type = "item", name = "yumako", amount = 20},
+        {type = "item", name = "nutrients", amount = 50},
+        {type = "item", name = "landfill", amount = 5}
+        },
+        results = {{type="item", name="artificial-yumako-soil", amount=20}}
+    },
+    {
+        type = "recipe",
+        name = "overgrowth-yumako-soil",
+        icon = "__space-age__/graphics/icons/overgrowth-yumako-soil.png",
+        categories = {"crafting-with-fluid"},
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 2000,
+            max = 2000
+        }
+        },
+        enabled = false,
+        allow_productivity = true,
+        energy_required = 10,
+        ingredients =
+        {
+        {type = "item", name = "artificial-yumako-soil", amount = 2},
+        {type = "item", name = "yumako-seed", amount = 5},
+        {type = "item", name = "biter-egg", amount = 10},
+        {type = "item", name = "raw-fish", amount = 25},
+        {type = "item", name = "spoilage", amount = 50},
+        {type="fluid", name="water", amount=100}
+        },
+        results = {{type="item", name="overgrowth-yumako-soil", amount=5}}
+    },
+    {
+        type = "recipe",
+        name = "artificial-jellynut-soil",
+        icon = "__space-age__/graphics/icons/artificial-jellynut-soil.png",
+        categories = {"crafting"},
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 2000,
+            max = 2000
+        }
+        },
+        enabled = false,
+        allow_productivity = true,
+        energy_required = 2,
+        ingredients =
+        {
+        {type = "item", name = "jellynut-seed", amount = 2},
+        {type = "item", name = "jellynut", amount = 20},
+        {type = "item", name = "nutrients", amount = 50},
+        {type = "item", name = "landfill", amount = 5}
+        },
+        results = {{type="item", name="artificial-jellynut-soil", amount=20}}
+    },
+    {
+        type = "recipe",
+        name = "overgrowth-jellynut-soil",
+        icon = "__space-age__/graphics/icons/overgrowth-jellynut-soil.png",
+        categories = {"crafting-with-fluid"},
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 2000,
+            max = 2000
+        }
+        },
+        enabled = false,
+        allow_productivity = true,
+        energy_required = 10,
+        ingredients =
+        {
+        {type = "item", name = "artificial-jellynut-soil", amount = 2},
+        {type = "item", name = "jellynut-seed", amount = 5},
+        {type = "item", name = "biter-egg", amount = 10},
+        {type = "item", name = "raw-fish", amount = 25},
+        {type = "item", name = "spoilage", amount = 50},
+        {type="fluid", name="water", amount=100}
+        },
+        results = {{type="item", name="overgrowth-jellynut-soil", amount=5}}
+    },
+    {
+        type = "recipe",
+        name = "biolab",
+        energy_required = 10,
+        ingredients =
+        {
+        {type = "item", name = "lab", amount = 1},
+        {type = "item", name = "biter-egg", amount = 10},
+        {type = "item", name = "processing-unit", amount = 10},
+        {type = "item", name = "raw-fish", amount = 10},
+        {type = "item", name = "refined-concrete", amount = 25},
+        {type = "item", name = "capture-robot-rocket", amount = 2},
+        {type = "item", name = "uranium-235", amount = 3}
+        },
+        results = {{type="item", name="biolab", amount=1}},
+        auto_recycle = false,
+        enabled = false
+    },
+    {
+        type = "recipe",
+        name = "stack-inserter",
+        enabled = false,
+        energy_required = 0.5,
+        ingredients =
+        {
+        {type = "item", name = "bulk-inserter", amount = 4},
+        {type = "item", name = "electric-engine-unit", amount = 10},
+        {type = "item", name = "processing-unit", amount = 1},
+        {type = "item", name = "carbon-fiber", amount = 2},
+        {type = "item", name = "jelly", amount = 10},
+        },
+        results = {{type="item", name="stack-inserter", amount=4}}
+    },
+
 })
