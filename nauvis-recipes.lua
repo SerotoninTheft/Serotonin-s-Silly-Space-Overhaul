@@ -1704,43 +1704,10 @@ data:extend({
     results = {{type = "item", name = "solar-panel-equipment", amount = 1}},
     allow_productivity = true,
   },
-    {
-        type = "recipe",
-        name = "extract-microplastics-from-fish",
-        localised_name = {"recipe-name.extract-microplastics-from-fish"},
-        localised_description = {"recipe-description.extract-microplastics-from-fish"},
-        categories = {"chemistry"},
-        enabled = false,
-        energy_required = 20,
-        ingredients = {
-            {type = "item", name = "raw-fish", amount = 10},
-        },
-        results = {
-            {type = "item", name = "plastic-bar", amount = 3},
-            {type = "fluid", name = "water", amount = 10},
-        },
-        icon = "__serotonin-overhaul-reuploaded__/graphics/icons/extract-microplastics-from-fish.png",
-        icon_size = 64,
-        subgroup = "intermediate-product",
-        order = "b[plastic-bar]-b[extract-microplastics-from-fish]"
-    }
 })
 
-table.insert(data.raw["technology"]["plastics"].effects, {type = "unlock-recipe", recipe = "extract-microplastics-from-fish"})
 
 data:extend({
-  {
-    type = "recipe",
-    name = "wood-copper-circuit",
-    ingredients = {
-      {type = "item", name = "wood", amount = 1},
-      {type = "item", name = "copper-cable", amount = 3}
-    },
-    results = {{type = "item", name = "electronic-circuit", amount = 1}},
-    allow_productivity = true,
-    enabled = true, -- Makes the recipe available from the start
-    energy_required = 0.5 -- Optional: Set the crafting time
-  },
   {
     type = "recipe",
     name = "offshore-pump",

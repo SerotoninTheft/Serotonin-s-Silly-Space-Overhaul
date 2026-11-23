@@ -390,4 +390,30 @@ data:extend({
         main_product="explosive-rocket"
     },
 
+
+
+
+    {
+        type = "recipe",
+        name = "yumako-microgravity-aeroponics",
+        icon = "__space-age__/graphics/icons/advanced-oxide-asteroid-crushing.png",
+        categories = {"organic"},
+        auto_recycle = false,
+        enabled = true,
+        ingredients =
+        {
+        {type = "item", name = "oxide-asteroid-chunk", amount = 1, ignored_by_stats = 1}
+        },
+        energy_required = 2,
+        results =
+        {
+        {type = "item", name = "ice", amount = 3},
+        {type = "item", name = "stone", amount = 10},
+        {type = "item", name = "calcite", amount = 2},
+        {type = "item", name = "oxide-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
+        },
+        allow_productivity = false,
+        allow_decomposition = false
+    },
+
 })
