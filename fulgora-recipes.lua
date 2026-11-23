@@ -226,6 +226,7 @@ data:extend({
   {
     type = "recipe",
     name = "energy-shield-mk2-equipment",
+    categories = {"electromagnetics"},
     enabled = false,
     energy_required = 10,
     ingredients =

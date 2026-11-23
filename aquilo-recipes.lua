@@ -266,5 +266,189 @@ data:extend({
         quaternary = {r = 0.100, g = 0.300, b = 0.500, a = 1.000}, -- #194c7fff
         }
     },
+    {
+        type = "recipe",
+        name = "captive-biter-spawner",
+        categories = {"cryogenics"},
+        energy_required = 10,
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "biter-egg", amount = 10},
+        {type = "item", name = "capture-robot-rocket", amount = 1},
+        {type = "item", name = "uranium-235", amount = 15},
+        {type = "item", name = "bioflux", amount = 15},
+        {type = "fluid", name = "fluoroketone-cold", amount = 100},
+        },
+        results =
+        {
+        {type = "item", name = "captive-biter-spawner", amount = 1, reset_freshness_on_craft = true}
+        },
+        auto_recycle = false,
+    },
+    {
+        type = "recipe",
+        name = "quantum-processor",
+        categories = {"electromagnetics"},
+        subgroup = "aquilo-processes",
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            max = 600
+        }
+        },
+        order = "c[lithium]-c[quantum-processor]",
+        energy_required = 300,
+        ingredients =
+        {
+        {type = "item", name = "tungsten-carbide", amount = 2},
+        {type = "item", name = "processing-unit", amount = 30},
+        {type = "item", name = "superconductor", amount = 3},
+        {type = "item", name = "carbon-fiber", amount = 2},
+        {type = "item", name = "lithium-plate", amount = 3},
+        {type = "item", name = "foundation", amount = 1},
+        {type = "item", name = "selector-combinator", amount = 1},
+        {type = "item", name = "battery-mk3-equipment", amount = 1},
+        {type = "item", name = "energy-shield-mk2-equipment", amount = 1},
+        {type = "item", name = "holmium-plate", amount = 3},
+        {type = "item", name = "supercapacitor", amount = 1},
+        {type = "item", name = "pentapod-egg", amount = 1},
+        {type = "item", name = "heat-pipe", amount = 1},
+        {type = "item", name = "uranium-fuel-cell", amount = 2},
+
+        {type = "fluid", name = "fluoroketone-cold", amount = 100, ignored_by_stats = 50},
+        },
+        results = {
+        {type = "item", name = "quantum-processor", amount = 30},
+        {type = "fluid", name = "fluoroketone-hot", amount = 50, temperature = 180, ignored_by_stats = 50, ignored_by_productivity = 50}
+        },
+        allow_productivity = true,
+        main_product = "quantum-processor",
+        enabled = false,
+        crafting_machine_tint =
+        {
+        primary = {r = 0.460, g = 0.188, b = 0.649, a = 1.000}, -- #752fa5ff
+        secondary = {r = 0.489, g = 0.484, b = 0.381, a = 1.000}, -- #7c7b61ff
+        tertiary = {r = 0.196, g = 0.101, b = 0.101, a = 1.000}, -- #311919ff
+        quaternary = {r = 0.518, g = 0.539, b = 0.993, a = 1.000}, -- #8489fdff
+        }
+    },
+    {
+        type = "recipe",
+        name = "foundation",
+        energy_required = 120,
+        enabled = false,
+        categories = {"crafting-with-fluid"},
+        ingredients =
+        {
+        {type = "item", name = "tungsten-plate", amount = 4},
+        {type = "item", name = "lithium-plate", amount = 4},
+        {type = "item", name = "carbon-fiber", amount = 4},
+        {type = "item", name = "refined-concrete", amount = 10},
+        {type = "item", name = "low-density-structure", amount = 1},
+        {type = "item", name = "carbon", amount = 4},
+        {type = "item", name = "plastic-bar", amount = 4},
+
+        {type = "item", name = "stone", amount = 20},
+        {type = "fluid", name = "fluoroketone-cold", amount = 20}
+        },
+        results = {{type="item", name="foundation", amount=10}}
+    },
+    {
+        type = "recipe",
+        name = "fusion-reactor",
+        categories = {"cryogenics"},
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 100,
+            max = 600
+        }
+        },
+        energy_required = 60,
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "tungsten-plate", amount = 200},
+        {type = "item", name = "superconductor", amount = 200},
+        {type = "item", name = "quantum-processor", amount = 250},
+        {type = "item", name = "foundation", amount = 100},
+        {type = "item", name = "supercapacitor", amount = 100},
+        {type = "item", name = "carbon-fiber", amount = 100},
+
+        },
+        results = {{type="item", name="fusion-reactor", amount=1}},
+        requester_paste_multiplier = 1,
+        crafting_machine_tint =
+        {
+        primary = {r = 0.298, g = 0.442, b = 0.518, a = 1.000}, -- #4c7084ff
+        secondary = {r = 0.864, g = 0.706, b = 0.902, a = 1.000}, -- #dcb4e6ff
+        tertiary = {r = 0.159, g = 0.136, b = 0.207, a = 1.000}, -- #282234ff
+        quaternary = {r = 0.945, g = 0.370, b = 1.000, a = 1.000}, -- #f15effff
+        },
+        auto_recycle = true,
+    },
+    {
+        type = "recipe",
+        name = "fusion-generator",
+        categories = {"cryogenics"},
+        surface_conditions =
+        {
+        {
+            property = "pressure",
+            min = 100,
+            max = 600
+        }
+        },
+        energy_required = 30,
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "tungsten-plate", amount = 100},
+        {type = "item", name = "superconductor", amount = 100},
+        {type = "item", name = "quantum-processor", amount = 50},
+        {type = "item", name = "foundation", amount = 20},
+        {type = "item", name = "supercapacitor", amount = 20},
+        {type = "item", name = "carbon-fiber", amount = 20},
+
+        },
+        results = {{type="item", name="fusion-generator", amount=1}},
+        requester_paste_multiplier = 1,
+        crafting_machine_tint =
+        {
+        primary = {r = 0.298, g = 0.442, b = 0.518, a = 1.000}, -- #4c7084ff
+        secondary = {r = 0.864, g = 0.706, b = 0.902, a = 1.000}, -- #dcb4e6ff
+        tertiary = {r = 0.159, g = 0.136, b = 0.207, a = 1.000}, -- #282234ff
+        quaternary = {r = 0.945, g = 0.370, b = 1.000, a = 1.000}, -- #f15effff
+        },
+        auto_recycle = true,
+    },
+    {
+        type = "recipe",
+        name = "railgun-turret",
+        categories = {"cryogenics"},
+        enabled = false,
+        energy_required = 10,
+        ingredients =
+        {
+            {type = "item", name = "quantum-processor", amount = 100},
+            {type = "item", name = "tungsten-plate", amount = 30},
+            {type = "item", name = "superconductor", amount = 50},
+            {type = "item", name = "carbon-fiber", amount = 20},
+            {type = "fluid", name = "fluoroketone-cold", amount = 100},
+            {type = "item", name = "rail", amount = 1000},
+        },
+        results = {{type="item", name="railgun-turret", amount=1}},
+        crafting_machine_tint =
+        {
+        primary = {r = 0.504, g = 0.448, b = 0.321, a = 1.000}, -- #807251ff
+        secondary = {r = 0.312, g = 0.519, b = 0.601, a = 1.000}, -- #4f8499ff
+        tertiary = {r = 0.402, g = 0.558, b = 0.880, a = 1.000}, -- #668ee0ff
+        quaternary = {r = 0.246, g = 0.246, b = 0.246, a = 1.000}, -- #3e3e3eff
+        },
+        auto_recycle = true,
+    },
 
 })

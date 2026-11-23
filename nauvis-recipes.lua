@@ -1986,7 +1986,7 @@ data:extend({
   {
     type = "recipe",
     name = "energy-shield-equipment",
-    categories = {"crafting-with-fluid"},
+    categories = {"crafting-with-fluid","electromagnetics"},
     ingredients = {
       {type = "item", name = "processing-unit", amount = 5},
       {type = "item", name = "steel-plate", amount = 10},

@@ -371,5 +371,23 @@ data:extend({
         quaternary = {r = 0.683, g = 0.915, b = 1.000, a = 0.502}, -- #aee9ff80
         }
     },
+    {
+        type = "recipe",
+        name = "explosive-rocket",
+        categories = {"chemistry"},
+        enabled = false,
+        energy_required = 8,
+        ingredients =
+        {
+            {type = "item", name = "rocket", amount = 3},
+            {type = "item", name = "explosives", amount = 5}
+        },
+        results = {
+            {type="item", name="explosive-rocket", amount=3},
+            {type="fluid", name="steam", amount=20},
+            {type="fluid", name="crude-oil", amount=10},
+        },
+        main_product="explosive-rocket"
+    },
 
 })
