@@ -188,19 +188,19 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "item", name = "supercapacitor", amount = 2},
-      {type = "item", name = "superconductor", amount = 5},
-      {type = "item", name = "processing-unit", amount = 2},
-      {type = "item", name = "holmium-plate", amount = 4},
-      {type = "item", name = "substation", amount = 2},
-      {type = "item", name = "battery", amount = 100},
+      {type = "item", name = "supercapacitor", amount = 3},
+      {type = "item", name = "superconductor", amount = 6},
+      {type = "item", name = "processing-unit", amount = 3},
+      {type = "item", name = "holmium-plate", amount = 5},
+      {type = "item", name = "substation", amount = 3},
+      {type = "item", name = "battery", amount = 10},
       {type = "fluid", name = "electrolyte", amount = 125},
       {type = "fluid", name = "holmium-solution", amount = 125},
     },
     energy_required = 10,
     results = {
       {type="item", name="electromagnetic-science-pack", amount=10},
-      {type="item", name="accumulator", amount=100, ignored_by_productivity=100, independent_probability=0.99},
+      {type="item", name="scrap", amount_min = 30, amount_max = 150},
     },
     main_product = "electromagnetic-science-pack",
     allow_productivity = true

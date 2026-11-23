@@ -187,7 +187,7 @@ data:extend({
     {
       type = "recipe",
       name = "rocket-fuel",
-      categories = {"crafting-with-fluid"},
+      categories = {"crafting-with-fluid","cryogenics"},
       ingredients = {
         {type = "item", name = "solid-fuel", amount = 20},
         {type = "fluid", name = "light-oil", amount = 25},
@@ -1477,7 +1477,7 @@ data:extend({
   {
     type = "recipe",
     name = "plastic-bar",
-    categories = {"chemistry"},
+    categories = {"chemistry","cryogenics"},
     energy_required = 1,
     enabled = false,
     ingredients =
@@ -1519,7 +1519,7 @@ data:extend({
   {
     type = "recipe",
     name = "battery",
-    categories = {"crafting-with-fluid", "electromagnetics"},
+    categories = {"crafting-with-fluid","cryogenics"},
     energy_required = 5,
     enabled = false,
     ingredients =
@@ -1543,7 +1543,7 @@ data:extend({
   {
     type = "recipe",
     name = "explosives",
-    categories = {"chemistry"},
+    categories = {"chemistry","cryogenics"},
     energy_required = 4,
     enabled = false,
     ingredients =

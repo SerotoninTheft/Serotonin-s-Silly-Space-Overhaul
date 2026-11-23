@@ -191,7 +191,7 @@ data:extend({
     {
         type = "recipe",
         name = "rocket",
-        categories = {"chemistry"},
+        categories = {"chemistry", "cryogenics"},
         enabled = false,
         energy_required = 10,
         ingredients =
@@ -208,6 +208,167 @@ data:extend({
             {type = "item", name = "tungsten-plate", amount = 10, independent_probability=0.99,ignored_by_productivity=10},
             {type="fluid", name="steam", amount=60},
             {type="fluid", name="crude-oil", amount=30},
+        },
+        main_product="rocket",
+    },
+    {
+        type = "recipe",
+        name = "advanced-metallic-asteroid-crushing",
+        localised_name = {"recipe-name.advanced-metallic-asteroid-crushing"},
+        icon = "__space-age__/graphics/icons/advanced-metallic-asteroid-crushing.png",
+        categories = {"crushing"},
+        subgroup="space-crushing",
+        order = "c-a-b",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "metallic-asteroid-chunk", amount = 1, ignored_by_stats = 1}
+        },
+        energy_required = 2,
+        results =
+        {
+        {type = "item", name = "iron-ore", amount = 10},
+        {type = "item", name = "stone", amount = 10},
+        {type = "item", name = "copper-ore", amount = 4},
+        {type = "item", name = "metallic-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
+        },
+        allow_productivity = true,
+        allow_decomposition = false
+    },
+    {
+        type = "recipe",
+        name = "advanced-carbonic-asteroid-crushing",
+        localised_name = {"recipe-name.advanced-carbonic-asteroid-crushing"},
+        icon = "__space-age__/graphics/icons/advanced-carbonic-asteroid-crushing.png",
+        categories = {"crushing"},
+        subgroup="space-crushing",
+        order = "e[advanced-carbonic-asteroid-crushing]",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "carbonic-asteroid-chunk", amount = 1, ignored_by_stats = 1}
+        },
+        energy_required = 2,
+        results =
+        {
+        {type = "item", name = "carbon", amount = 5},
+        {type = "item", name = "coal", amount = 5},
+        {type = "item", name = "stone", amount = 10},
+        {type = "item", name = "sulfur", amount = 2},
+        {type = "item", name = "carbonic-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
+        },
+        allow_productivity = true,
+        allow_decomposition = false
+    },
+    {
+        type = "recipe",
+        name = "advanced-oxide-asteroid-crushing",
+        localised_name = {"recipe-name.advanced-oxide-asteroid-crushing"},
+        icon = "__space-age__/graphics/icons/advanced-oxide-asteroid-crushing.png",
+        categories = {"crushing"},
+        subgroup="space-crushing",
+        order = "f[advanced-oxide-asteroid-crushing]",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "oxide-asteroid-chunk", amount = 1, ignored_by_stats = 1}
+        },
+        energy_required = 2,
+        results =
+        {
+        {type = "item", name = "ice", amount = 3},
+        {type = "item", name = "stone", amount = 10},
+        {type = "item", name = "calcite", amount = 2},
+        {type = "item", name = "oxide-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
+        },
+        allow_productivity = true,
+        allow_decomposition = false
+    },
+    {
+        type = "recipe",
+        name = "advanced-thruster-fuel",
+        icon = "__space-age__/graphics/icons/advanced-thruster-fuel.png",
+        localised_name = {"recipe-name.advanced-thruster-fuel"},
+        categories = {"chemistry"},
+        subgroup = "space-processing",
+        order = "b[advanced-thruster-fuel]",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+            {type = "item", name = "carbon", amount = 10},
+            {type = "item", name = "rocket-fuel", amount = 5},
+            {type = "fluid", name = "water", amount = 25},
+            {type = "item", name = "calcite", amount = 3},
+        },
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        energy_required = 5,
+        results =
+        {
+            {type = "fluid", name = "thruster-fuel", amount = 6000},
+            {type = "fluid", name = "light-oil", amount = 225},
+            {type = "item", name = "sulfur", amount = 2},
+            {type = "item", name = "steel-plate", amount = 1},
+        },
+        allow_productivity = true,
+        allow_decomposition = false,
+        crafting_machine_tint =
+        {
+        primary = {r = 0.881, g = 0.100, b = 0.000, a = 0.502}, -- #e0190080
+        secondary = {r = 0.930, g = 0.767, b = 0.605, a = 0.502}, -- #edc39a80
+        tertiary = {r = 0.873, g = 0.649, b = 0.542, a = 0.502}, -- #dea58a80
+        quaternary = {r = 0.629, g = 0.174, b = 0.000, a = 0.502}, -- #a02c0080
+        }
+    },
+
+    {
+        type = "recipe",
+        name = "advanced-thruster-oxidizer",
+        icon = "__space-age__/graphics/icons/advanced-thruster-oxidizer.png",
+        localised_name = {"recipe-name.advanced-thruster-oxidizer"},
+        categories = {"chemistry"},
+        subgroup = "space-processing",
+        order = "d[advanced-thruster-oxydizer]",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "iron-ore", amount = 2},
+        {type = "item", name = "calcite", amount = 1},
+        {type = "fluid", name = "water", amount = 100},
+        {type = "item", name = "ice", amount = 2},
+        },
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        energy_required = 5,
+        results =
+        {
+        {type = "fluid", name = "thruster-oxidizer", amount = 3000},
+        },
+        allow_productivity = true,
+        allow_decomposition = false,
+        crafting_machine_tint =
+        {
+        primary = {r = 0.082, g = 0.396, b = 0.792, a = 0.502}, -- #1565ca80
+        secondary = {r = 0.161, g = 0.553, b = 0.796, a = 0.502}, -- #298dcb80
+        tertiary = {r = 0.059, g = 0.376, b = 0.545, a = 0.502}, -- #0f5f8a80
+        quaternary = {r = 0.683, g = 0.915, b = 1.000, a = 0.502}, -- #aee9ff80
         }
     },
 
