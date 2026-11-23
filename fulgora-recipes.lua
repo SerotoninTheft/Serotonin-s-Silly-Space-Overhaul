@@ -23,15 +23,15 @@ data:extend({
     ingredients = {{type = "item", name = "scrap", amount = 1}},
     results =
     {
-      {type = "item", name = "electric-mining-drill",        amount = 1, independent_probability = 0.05},
-      {type = "item", name = "electric-furnace",        amount = 1, independent_probability = 0.04},
-      {type = "item", name = "heat-exchanger",        amount = 1, independent_probability = 0.02},
-      {type = "item", name = "quality-module-2",        amount = 1, independent_probability = 0.03},
-      {type = "item", name = "landfill",        amount = 1, independent_probability = 0.03},
-      {type = "item", name = "ice-platform",        amount = 1, independent_probability = 0.02},
+      {type = "item", name = "electric-mining-drill",        amount = 1, independent_probability = 0.08},
+      {type = "item", name = "electric-furnace",        amount = 1, independent_probability = 0.06},
+      {type = "item", name = "heat-exchanger",        amount = 1, independent_probability = 0.04},
+      {type = "item", name = "quality-module-2",        amount = 1, independent_probability = 0.05},
+      {type = "item", name = "landfill",        amount = 1, independent_probability = 0.05},
+      {type = "item", name = "ice-platform",        amount = 1, independent_probability = 0.03},
       {type = "item", name = "holmium-ore",        amount = 1, independent_probability = 0.02},
       {type = "item", name = "copper-ore",        amount = 1, independent_probability = 0.15},
-      {type = "item", name = "uranium-238",        amount = 1, independent_probability = 0.02},
+      {type = "item", name = "uranium-238",        amount = 1, independent_probability = 0.04},
       {type = "item", name = "explosives",        amount = 1, independent_probability = 0.5},
       {type = "item", name = "hazard-concrete",        amount = 1, independent_probability = 0.4},
     }
@@ -89,4 +89,121 @@ data:extend({
     main_product = "holmium-plate",
     allow_productivity = true
   },
+  {
+    type = "recipe",
+    name = "electromagnetic-plant",
+    categories = {"electromagnetics", "advanced-crafting"},
+    surface_conditions =
+    {
+      {
+        property = "magnetic-field",
+        min = 99
+      }
+    },
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "holmium-plate", amount = 200},
+      {type = "item", name = "steel-plate", amount = 50},
+      {type = "item", name = "processing-unit", amount = 50},
+      {type = "item", name = "refined-concrete", amount = 50},
+      {type = "item", name = "constant-combinator", amount = 5}
+    },
+    results = {{type="item", name="electromagnetic-plant", amount=2}},
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "superconductor",
+    categories = {"electromagnetics"},
+    subgroup = "fulgora-processes",
+    order = "b[holmium]-d[superconductor]",
+    energy_required = 5,
+    ingredients =
+    {
+      {type = "item", name = "holmium-plate", amount = 4},
+      {type = "item", name = "copper-plate", amount = 10},
+      {type = "item", name = "heat-pipe", amount = 2},
+      {type = "item", name = "plastic-bar", amount = 5},
+      {type = "fluid", name = "light-oil", amount = 20},
+      {type = "fluid", name = "holmium-solution", amount = 20},
+    },
+    results = {{type = "item", name = "superconductor", amount = 15}},
+    allow_productivity = true,
+    auto_recycle = false,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "supercapacitor",
+    categories = {"electromagnetics"},
+    subgroup = "fulgora-processes",
+    order = "b[holmium]-f[supercapacitor]",
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "holmium-plate", amount = 12},
+      {type = "item", name = "superconductor", amount = 12},
+      {type = "item", name = "electronic-circuit", amount = 5},
+      {type = "item", name = "power-switch", amount = 2},
+      {type = "item", name = "decider-combinator", amount = 2},
+      {type = "item", name = "battery", amount = 10},
+      {type = "fluid", name = "electrolyte", amount = 80},
+      {type = "fluid", name = "lubricant", amount = 20},
+    },
+    results = {{type="item", name="supercapacitor", amount=10}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "electrolyte",
+    categories = {"electromagnetics"},
+    subgroup = "fulgora-processes",
+    order = "b[holmium]-e[electrolyte]",
+    energy_required = 5,
+    ingredients =
+    {
+      {type = "item", name = "stone", amount = 1},
+      {type = "item", name = "sulfur", amount = 4},
+      {type = "fluid", name = "petroleum-gas", amount = 20},
+      {type = "fluid", name = "holmium-solution", amount = 30},
+    },
+    results = {{type = "fluid", name = "electrolyte", amount = 50}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "electromagnetic-science-pack",
+    categories = {"electromagnetics"},
+    surface_conditions =
+    {
+      {
+        property = "magnetic-field",
+        min = 99,
+        max = 99
+      }
+    },
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "supercapacitor", amount = 2},
+      {type = "item", name = "superconductor", amount = 5},
+      {type = "item", name = "processing-unit", amount = 2},
+      {type = "item", name = "holmium-plate", amount = 4},
+      {type = "item", name = "substation", amount = 2},
+      {type = "item", name = "battery", amount = 100},
+      {type = "fluid", name = "electrolyte", amount = 125},
+      {type = "fluid", name = "holmium-solution", amount = 125},
+    },
+    energy_required = 10,
+    results = {
+      {type="item", name="electromagnetic-science-pack", amount=10},
+      {type="item", name="accumulator", amount=100, ignored_by_productivity=100, independent_probability=0.99},
+    },
+    main_product = "electromagnetic-science-pack",
+    allow_productivity = true
+  },
+
 })
