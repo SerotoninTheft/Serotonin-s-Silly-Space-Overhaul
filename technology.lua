@@ -18,3 +18,8 @@ add_prerequisite("circuit-network", "electric-energy-distribution-1")
 add_prerequisite("engine", "automation-2")
 add_prerequisite("concrete", "sulfur-processing")
 add_prerequisite("chemical-science-pack", "belt-immunity-equipment")
+
+
+table.insert(data.raw.technology["railgun"].effects, {type = "unlock-recipe", recipe = "yumako-microgravity-aeroponics"})
+table.insert(data.raw.technology["railgun"].effects, {type = "unlock-recipe", recipe = "jellynut-microgravity-aeroponics"})
+table.insert(data.raw.technology["railgun"].effects, {type = "unlock-recipe", recipe = "pentapod-astroculture"})

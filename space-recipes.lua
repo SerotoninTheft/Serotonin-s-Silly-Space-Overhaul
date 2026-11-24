@@ -400,7 +400,7 @@ data:extend({
         categories = {"organic"},
         subgroup = "space-processing",
         auto_recycle = false,
-        enabled = true,
+        enabled = false,
         ingredients =
         {
         {type = "item", name = "yumako-seed", amount = 15},
@@ -432,7 +432,7 @@ data:extend({
         categories = {"organic"},
         subgroup = "space-processing",
         auto_recycle = false,
-        enabled = true,
+        enabled = false,
         ingredients =
         {
         {type = "item", name = "jellynut-seed", amount = 15},
@@ -457,4 +457,55 @@ data:extend({
         allow_productivity = false,
         allow_decomposition = false
     },
+    {
+        type = "recipe",
+        name = "pentapod-astroculture",
+        icon = "__serotonin-space-overhaul__/graphics/icons/pentapod-astroculture.png",
+        categories = {"organic"},
+        subgroup = "space-processing",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+        {type = "item", name = "jelly", amount = 40},
+        {type = "item", name = "yumako-mash", amount = 20},
+        {type = "item", name = "nutrients", amount = 30},
+        {type = "item", name = "calcite", amount = 2},
+        {type = "item", name = "pentapod-egg", amount = 1},
+        {type = "fluid", name = "thruster-fuel", amount = 100},
+        },
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        energy_required = 10,
+        results =
+        {
+        {type = "item", name = "pentapod-egg", amount = 10},
+        },
+        allow_productivity = false,
+        allow_decomposition = false
+    },
+    {
+        type = "recipe",
+        name = "railgun-ammo",
+        enabled = false,
+        energy_required = 240,
+        ingredients =
+        {
+            {type = "item", name = "steel-plate", amount = 120},
+            {type = "item", name = "copper-cable", amount = 300},
+            {type = "item", name = "pentapod-egg", amount = 500},
+            {type = "item", name = "quantum-processor", amount = 1},
+            {type = "item", name = "tesla-ammo", amount = 1},
+        },
+        results = {
+            {type="item", name="railgun-ammo", amount=50},
+        }
+    },
+
 })
