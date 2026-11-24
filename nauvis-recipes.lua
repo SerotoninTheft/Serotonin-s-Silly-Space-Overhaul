@@ -473,7 +473,7 @@ data:extend({
       ingredients = {
         {type = "item", name = "iron-chest", amount = 1},
         {type = "item", name = "iron-plate", amount = 2},
-        {type = "item", name = "concrete", amount = 3},
+        {type = "item", name = "stone-brick", amount = 3},
         {type = "item", name = "steel-plate", amount = 4}
       },
       results = {{type = "item", name = "steel-chest", amount = 1}},
