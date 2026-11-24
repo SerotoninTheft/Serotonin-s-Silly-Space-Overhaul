@@ -122,9 +122,9 @@ data:extend({
         enabled = false,
         ingredients =
         {
-        {type = "item", name = "carbon", amount = 10},
-        {type = "item", name = "rocket-fuel", amount = 5},
-        {type = "fluid", name = "water", amount = 25}
+            {type = "item", name = "carbon", amount = 10},
+            {type = "item", name = "rocket-fuel", amount = 5},
+            {type = "fluid", name = "water", amount = 25}
         },
         surface_conditions =
         {
@@ -164,9 +164,9 @@ data:extend({
         enabled = false,
         ingredients =
         {
-        {type = "item", name = "iron-ore", amount = 2},
-        {type = "item", name = "ice", amount = 2},
-        {type = "fluid", name = "water", amount = 25}
+            {type = "item", name = "iron-ore", amount = 2},
+            {type = "item", name = "ice", amount = 2},
+            {type = "fluid", name = "water", amount = 25}
         },
         surface_conditions =
         {
@@ -223,15 +223,15 @@ data:extend({
         enabled = false,
         ingredients =
         {
-        {type = "item", name = "metallic-asteroid-chunk", amount = 1, ignored_by_stats = 1}
+            {type = "item", name = "metallic-asteroid-chunk", amount = 1, ignored_by_stats = 1}
         },
         energy_required = 2,
         results =
         {
-        {type = "item", name = "iron-ore", amount = 10},
-        {type = "item", name = "stone", amount = 10},
-        {type = "item", name = "copper-ore", amount = 4},
-        {type = "item", name = "metallic-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
+            {type = "item", name = "iron-ore", amount = 10},
+            {type = "item", name = "stone", amount = 10},
+            {type = "item", name = "copper-ore", amount = 4},
+            {type = "item", name = "metallic-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
         },
         allow_productivity = true,
         allow_decomposition = false
@@ -248,16 +248,16 @@ data:extend({
         enabled = false,
         ingredients =
         {
-        {type = "item", name = "carbonic-asteroid-chunk", amount = 1, ignored_by_stats = 1}
+            {type = "item", name = "carbonic-asteroid-chunk", amount = 1, ignored_by_stats = 1}
         },
         energy_required = 2,
         results =
         {
-        {type = "item", name = "carbon", amount = 5},
-        {type = "item", name = "coal", amount = 5},
-        {type = "item", name = "stone", amount = 10},
-        {type = "item", name = "sulfur", amount = 2},
-        {type = "item", name = "carbonic-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
+            {type = "item", name = "carbon", amount = 5},
+            {type = "item", name = "coal", amount = 5},
+            {type = "item", name = "stone", amount = 10},
+            {type = "item", name = "sulfur", amount = 2},
+            {type = "item", name = "carbonic-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
         },
         allow_productivity = true,
         allow_decomposition = false
@@ -274,15 +274,15 @@ data:extend({
         enabled = false,
         ingredients =
         {
-        {type = "item", name = "oxide-asteroid-chunk", amount = 1, ignored_by_stats = 1}
+            {type = "item", name = "oxide-asteroid-chunk", amount = 1, ignored_by_stats = 1}
         },
         energy_required = 2,
         results =
         {
-        {type = "item", name = "ice", amount = 3},
-        {type = "item", name = "stone", amount = 10},
-        {type = "item", name = "calcite", amount = 2},
-        {type = "item", name = "oxide-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
+            {type = "item", name = "ice", amount = 3},
+            {type = "item", name = "stone", amount = 10},
+            {type = "item", name = "calcite", amount = 2},
+            {type = "item", name = "oxide-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
         },
         allow_productivity = true,
         allow_decomposition = false
@@ -343,10 +343,10 @@ data:extend({
         enabled = false,
         ingredients =
         {
-        {type = "item", name = "iron-ore", amount = 2},
-        {type = "item", name = "calcite", amount = 1},
-        {type = "fluid", name = "water", amount = 100},
-        {type = "item", name = "ice", amount = 2},
+            {type = "item", name = "iron-ore", amount = 2},
+            {type = "item", name = "calcite", amount = 1},
+            {type = "fluid", name = "water", amount = 100},
+            {type = "item", name = "ice", amount = 2},
         },
         surface_conditions =
         {
@@ -359,7 +359,7 @@ data:extend({
         energy_required = 5,
         results =
         {
-        {type = "fluid", name = "thruster-oxidizer", amount = 3000},
+            {type = "fluid", name = "thruster-oxidizer", amount = 3000},
         },
         allow_productivity = true,
         allow_decomposition = false,
@@ -403,10 +403,10 @@ data:extend({
         enabled = false,
         ingredients =
         {
-        {type = "item", name = "yumako-seed", amount = 15},
-        {type = "item", name = "overgrowth-yumako-soil", amount = 1},
-        {type = "item", name = "yumako-mash", amount = 15},
-        {type = "fluid", name = "thruster-oxidizer", amount = 100},
+            {type = "item", name = "yumako-seed", amount = 15},
+            {type = "item", name = "overgrowth-yumako-soil", amount = 1},
+            {type = "item", name = "yumako-mash", amount = 15},
+            {type = "fluid", name = "thruster-oxidizer", amount = 100},
         },
         surface_conditions =
         {
@@ -419,8 +419,8 @@ data:extend({
         energy_required = 100,
         results =
         {
-        {type = "item", name = "yumako", amount = 1000},
-        {type = "item", name = "overgrowth-yumako-soil", amount = 1,independent_probability=0.9,ignored_by_productivity=1},
+            {type = "item", name = "yumako", amount = 1000},
+            {type = "item", name = "overgrowth-yumako-soil", amount = 1,independent_probability=0.9,ignored_by_productivity=1},
         },
         allow_productivity = false,
         allow_decomposition = false
@@ -435,10 +435,10 @@ data:extend({
         enabled = false,
         ingredients =
         {
-        {type = "item", name = "jellynut-seed", amount = 15},
-        {type = "item", name = "overgrowth-jellynut-soil", amount = 1},
-        {type = "item", name = "jelly", amount = 15},
-        {type = "fluid", name = "thruster-oxidizer", amount = 100},
+            {type = "item", name = "jellynut-seed", amount = 15},
+            {type = "item", name = "overgrowth-jellynut-soil", amount = 1},
+            {type = "item", name = "jelly", amount = 15},
+            {type = "fluid", name = "thruster-oxidizer", amount = 100},
         },
         surface_conditions =
         {
@@ -451,8 +451,8 @@ data:extend({
         energy_required = 100,
         results =
         {
-        {type = "item", name = "jellynut", amount = 1000},
-        {type = "item", name = "overgrowth-jellynut-soil", amount = 1,independent_probability=0.9,ignored_by_productivity=1},
+            {type = "item", name = "jellynut", amount = 1000},
+            {type = "item", name = "overgrowth-jellynut-soil", amount = 1,independent_probability=0.9,ignored_by_productivity=1},
         },
         allow_productivity = false,
         allow_decomposition = false
@@ -467,12 +467,12 @@ data:extend({
         enabled = false,
         ingredients =
         {
-        {type = "item", name = "jelly", amount = 40},
-        {type = "item", name = "yumako-mash", amount = 20},
-        {type = "item", name = "nutrients", amount = 30},
-        {type = "item", name = "calcite", amount = 2},
-        {type = "item", name = "pentapod-egg", amount = 1},
-        {type = "fluid", name = "thruster-fuel", amount = 100},
+            {type = "item", name = "jelly", amount = 40},
+            {type = "item", name = "yumako-mash", amount = 20},
+            {type = "item", name = "nutrients", amount = 30},
+            {type = "item", name = "calcite", amount = 2},
+            {type = "item", name = "pentapod-egg", amount = 1},
+            {type = "fluid", name = "thruster-fuel", amount = 100},
         },
         surface_conditions =
         {
