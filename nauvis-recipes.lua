@@ -198,7 +198,7 @@ data:extend({
       results = {{type = "item", name = "rocket-fuel", amount = 5}},
       energy_required = 50,
       enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     },
     {
       type = "recipe",
@@ -1178,6 +1178,7 @@ data:extend({
         {type = "item", name = "burner-inserter", amount = 1}
       },
       results = {{type = "item", name = "automation-science-pack", amount = 10}},
+    allow_productivity = true,
       energy_required = 0.5 * 5,
       enabled = false,
 
@@ -1196,6 +1197,7 @@ data:extend({
         {type = "item", name = "repair-pack", amount = 1}
       },
       results = {{type = "item", name = "logistic-science-pack", amount = 10}},
+    allow_productivity = true,
       energy_required = 1 * 10,
       enabled = false
     },
@@ -1213,6 +1215,7 @@ data:extend({
         {type = "item", name = "radar", amount = 1}
       },
       results = {{type = "item", name = "military-science-pack", amount = 10}},
+    allow_productivity = true,
       energy_required = 2 * 10,
       enabled = false
     },
@@ -1247,6 +1250,7 @@ data:extend({
         {type = "item", name = "roboport", amount = 1}
       },
       results = {{type = "item", name = "production-science-pack", amount = 10}},
+    allow_productivity = true,
       energy_required = 3 * 10,
       enabled = false
     },
@@ -1264,6 +1268,7 @@ data:extend({
         {type = "item", name = "solar-panel-equipment", amount = 1}
       },
       results = {{type = "item", name = "utility-science-pack", amount = 10}},
+    allow_productivity = true,
       energy_required = 2 * 10,
       enabled = false
     },

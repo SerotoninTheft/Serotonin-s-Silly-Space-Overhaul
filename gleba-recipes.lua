@@ -53,7 +53,7 @@ data:extend({
         ingredients = {{type = "item", name = "yumako", amount = 1}},
         results =
         {
-        {type = "item", name = "yumako-seed", amount = 1, independent_probability = 0.02},
+        {type = "item", name = "yumako-seed", amount = 1, independent_probability = 0.05},
         {type = "item", name = "carbon", amount = 1, independent_probability = 0.02},
         {type="item", name="nutrients", amount=10, percent_spoiled=0.9},
         {type = "item", name = "yumako-mash", amount = 4}
@@ -80,7 +80,7 @@ data:extend({
         },
         results =
         {
-        {type = "item", name = "jellynut-seed", amount = 1, independent_probability = 0.02 },
+        {type = "item", name = "jellynut-seed", amount = 1, independent_probability = 0.05 },
         {type = "item", name = "carbon", amount = 1, independent_probability = 0.02},
         {type="item", name="nutrients", amount=10, percent_spoiled=0.9},
         {type = "item", name = "jelly", amount = 8}
