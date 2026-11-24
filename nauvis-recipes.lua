@@ -20,7 +20,7 @@ data:extend({
     },
     results = {{type = "item", name = "iron-stick", amount = 7}},
     allow_productivity = true,
-    energy_required = 0.5 * 7
+    energy_required = 0.5 * 2
   },
   {
     type = "recipe",
@@ -31,7 +31,7 @@ data:extend({
     },
     results = {{type = "item", name = "copper-cable", amount = 7}},
     allow_productivity = true,
-    energy_required = 0.5 * 9,
+    energy_required = 0.5 * 3,
     enabled = false,
 
   },
@@ -732,7 +732,7 @@ data:extend({
       },
       results = {{type = "item", name = "small-electric-pole", amount = 4}},
     allow_productivity = true,
-      energy_required = 0.5 * 4,
+      energy_required = 0.5,
       enabled = false,
 
     },
