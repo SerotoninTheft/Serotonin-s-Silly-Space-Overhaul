@@ -507,5 +507,60 @@ data:extend({
             {type="item", name="railgun-ammo", amount=50},
         }
     },
+    {
+        type = "recipe",
+        name = "promethium-science-pack",
+        energy_required = 25,
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        enabled = false,
+        allow_productivity = false,
+        categories = {"cryogenics"},
+        ingredients =
+        {
+            {type = "item", name = "promethium-asteroid-chunk", amount = 25},
+            {type = "item", name = "quantum-processor", amount = 1},
+            {type = "item", name = "biter-egg", amount = 10},
+            {type = "item", name = "automation-science-pack", amount = 25},
+            {type = "item", name = "logistic-science-pack", amount = 25},
+            {type = "item", name = "military-science-pack", amount = 25},
+            {type = "item", name = "chemical-science-pack", amount = 25},
+            {type = "item", name = "production-science-pack", amount = 25},
+            {type = "item", name = "utility-science-pack", amount = 25},
+            {type = "item", name = "space-science-pack", amount = 25},
+            {type = "item", name = "electromagnetic-science-pack", amount = 25},
+            {type = "item", name = "metallurgic-science-pack", amount = 25},
+            {type = "item", name = "agricultural-science-pack", amount = 25},
+            {type = "item", name = "cryogenic-science-pack", amount = 25},
+        },
+        results = {
+            {type="item", name="promethium-science-pack", amount=10},
+            {type = "item", name = "automation-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "logistic-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "military-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "chemical-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "production-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "utility-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "space-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "electromagnetic-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "metallurgic-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "agricultural-science-pack", amount = 25,independent_probability=0.98},
+            {type = "item", name = "cryogenic-science-pack", amount = 25,independent_probability=0.98},
+        },
+        main_product="promethium-science-pack",
+        crafting_machine_tint =
+        {
+        primary = {r = 0, g = 0, b = 0.1, a = 1},
+        secondary = {r = 0, g = 0, b = 0.4, a = 1},
+        tertiary = {r = 0.1, g = 0.1, b = 0.4, a = 1},
+        quaternary = {r = 0, g = 0, b = 0.1, a = 1},
+        }
+    },
 
 })
