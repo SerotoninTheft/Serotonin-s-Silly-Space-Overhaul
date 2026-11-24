@@ -396,7 +396,7 @@ data:extend({
     {
         type = "recipe",
         name = "yumako-microgravity-aeroponics",
-        icon = "__space-age__/graphics/icons/advanced-oxide-asteroid-crushing.png",
+        icon = "__serotonin-space-overhaul__/graphics/icons/yumako-aeroponics.png",
         categories = {"organic"},
         subgroup = "space-processing",
         auto_recycle = false,
@@ -428,7 +428,7 @@ data:extend({
     {
         type = "recipe",
         name = "jellynut-microgravity-aeroponics",
-        icon = "__space-age__/graphics/icons/advanced-oxide-asteroid-crushing.png",
+        icon = "__serotonin-space-overhaul__/graphics/icons/jellynut-aeroponics.png",
         categories = {"organic"},
         subgroup = "space-processing",
         auto_recycle = false,
