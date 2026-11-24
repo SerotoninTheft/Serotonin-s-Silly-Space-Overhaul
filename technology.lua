@@ -18,6 +18,19 @@ add_prerequisite("circuit-network", "electric-energy-distribution-1")
 add_prerequisite("engine", "automation-2")
 add_prerequisite("concrete", "sulfur-processing")
 add_prerequisite("chemical-science-pack", "belt-immunity-equipment")
+add_prerequisite("uranium-processing", "electric-engine")
+add_prerequisite("advanced-circuit", "sulfur-processing")
+add_prerequisite("advanced-circuit", "circuit-network")
+add_prerequisite("nuclear-power", "advanced-oil-processing")
+add_prerequisite("processing-unit", "nuclear-power")
+
+add_prerequisite("production-science-pack", "construction-robotics")
+add_prerequisite("utility-science-pack", "effect-transmission")
+add_prerequisite("utility-science-pack", "automation-3")
+
+add_prerequisite("captivity", "fish-breeding")
+add_prerequisite("quantum-processor", "foundation")
+add_prerequisite("fast-inserter", "steel-processing")
 
 
 table.insert(data.raw.technology["railgun"].effects, {type = "unlock-recipe", recipe = "yumako-microgravity-aeroponics"})
