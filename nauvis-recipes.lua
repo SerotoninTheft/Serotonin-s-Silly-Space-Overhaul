@@ -1579,7 +1579,6 @@ data:extend({
       {type = "item", name = "iron-gear-wheel", amount = 3},
       {type = "item", name = "iron-plate", amount = 2},
       {type = "item", name = "wood", amount = 10},
-      {type = "item", name = "steel-plate", amount = 1},
       {type = "item", name = "pistol", amount = 1},
       {type = "item", name = "shotgun-shell", amount = 1}
     },
@@ -1750,7 +1749,6 @@ data:extend({
     name = "submachine-gun",
     ingredients = {
       {type = "item", name = "iron-plate", amount = 10},
-      {type = "item", name = "steel-plate", amount = 5},
       {type = "item", name = "copper-plate", amount = 5},
       {type = "item", name = "pistol", amount = 1}
     },
