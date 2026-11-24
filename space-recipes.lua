@@ -398,22 +398,63 @@ data:extend({
         name = "yumako-microgravity-aeroponics",
         icon = "__space-age__/graphics/icons/advanced-oxide-asteroid-crushing.png",
         categories = {"organic"},
+        subgroup = "space-processing",
         auto_recycle = false,
         enabled = true,
         ingredients =
         {
-        {type = "item", name = "oxide-asteroid-chunk", amount = 1, ignored_by_stats = 1}
+        {type = "item", name = "yumako-seed", amount = 15},
+        {type = "item", name = "overgrowth-yumako-soil", amount = 1},
+        {type = "item", name = "yumako-mash", amount = 15},
+        {type = "fluid", name = "thruster-oxidizer", amount = 100},
         },
-        energy_required = 2,
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        energy_required = 100,
         results =
         {
-        {type = "item", name = "ice", amount = 3},
-        {type = "item", name = "stone", amount = 10},
-        {type = "item", name = "calcite", amount = 2},
-        {type = "item", name = "oxide-asteroid-chunk", amount = 1, independent_probability = 0.8, ignored_by_stats = 1}
+        {type = "item", name = "yumako", amount = 1000},
+        {type = "item", name = "overgrowth-yumako-soil", amount = 1,independent_probability=0.9,ignored_by_productivity=1},
         },
         allow_productivity = false,
         allow_decomposition = false
     },
-
+    {
+        type = "recipe",
+        name = "jellynut-microgravity-aeroponics",
+        icon = "__space-age__/graphics/icons/advanced-oxide-asteroid-crushing.png",
+        categories = {"organic"},
+        subgroup = "space-processing",
+        auto_recycle = false,
+        enabled = true,
+        ingredients =
+        {
+        {type = "item", name = "jellynut-seed", amount = 15},
+        {type = "item", name = "overgrowth-jellynut-soil", amount = 1},
+        {type = "item", name = "jelly", amount = 15},
+        {type = "fluid", name = "thruster-oxidizer", amount = 100},
+        },
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        energy_required = 100,
+        results =
+        {
+        {type = "item", name = "jellynut", amount = 1000},
+        {type = "item", name = "overgrowth-jellynut-soil", amount = 1,independent_probability=0.9,ignored_by_productivity=1},
+        },
+        allow_productivity = false,
+        allow_decomposition = false
+    },
 })
