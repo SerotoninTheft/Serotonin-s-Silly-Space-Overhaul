@@ -32,6 +32,10 @@ add_prerequisite("captivity", "fish-breeding")
 add_prerequisite("quantum-processor", "foundation")
 add_prerequisite("fast-inserter", "steel-processing")
 
+add_prerequisite("logistic-science-pack", "repair-pack")
+add_prerequisite("logistic-science-pack", "steel-processing")
+add_prerequisite("logistic-science-pack", "electric-mining-drill")
+
 
 table.insert(data.raw.technology["railgun"].effects, {type = "unlock-recipe", recipe = "yumako-microgravity-aeroponics"})
 table.insert(data.raw.technology["railgun"].effects, {type = "unlock-recipe", recipe = "jellynut-microgravity-aeroponics"})
