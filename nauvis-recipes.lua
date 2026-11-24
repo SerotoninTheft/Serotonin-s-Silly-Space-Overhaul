@@ -923,7 +923,8 @@ data:extend({
         {type = "item", name = "copper-plate", amount = 1}
       },
       results = {{type = "item", name = "repair-pack", amount = 1}},
-      energy_required = 0.5 * 1
+      energy_required = 0.5 * 1,
+      enabled = false,
     },
 
 
@@ -1665,6 +1666,7 @@ data:extend({
     },
     results = {{type = "item", name = "radar", amount = 1}},
     allow_productivity = true,
+      enabled = false
   },
   {
     type = "recipe",
