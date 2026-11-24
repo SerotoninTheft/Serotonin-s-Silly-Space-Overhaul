@@ -1041,7 +1041,8 @@ data:extend({
         {type = "item", name = "copper-cable", amount = 5}
       },
       results = {{type = "item", name = "electric-mining-drill", amount = 1}},
-      energy_required = 2 * 1
+      energy_required = 2 * 1,
+      enabled = false
     },
     {
       type = "recipe",
@@ -1654,7 +1655,6 @@ data:extend({
   {
     type = "recipe",
     name = "radar",
-    enabled = true,
     ingredients = {
       {type = "item", name = "electronic-circuit", amount = 3},
       {type = "item", name = "iron-plate", amount = 2},
@@ -1720,7 +1720,6 @@ data:extend({
       {type = "item", name = "electronic-circuit", amount = 2},
       {type = "item", name = "pipe", amount = 2},
       {type = "item", name = "iron-gear-wheel", amount = 1},
-      {type = "item", name = "steel-plate", amount = 2},
       {type = "item", name = "pipe-to-ground", amount = 1}
     },
     results = {{type = "item", name = "offshore-pump", amount = 1}},
