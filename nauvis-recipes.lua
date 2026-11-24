@@ -1291,7 +1291,7 @@ data:extend({
     {
       type = "recipe",
       name = "arithmetic-combinator",
-      categories = {"electromagnetics"},
+      categories = {"crafting","electromagnetics"},
       ingredients = {
         {type = "item", name = "copper-cable", amount = 3},
         {type = "item", name = "electronic-circuit", amount = 2},
@@ -1306,7 +1306,7 @@ data:extend({
     {
       type = "recipe",
       name = "decider-combinator",
-      categories = {"electromagnetics"},
+      categories = {"crafting","electromagnetics"},
       ingredients = {
         {type = "item", name = "copper-cable", amount = 3},
         {type = "item", name = "electronic-circuit", amount = 2},
@@ -1320,7 +1320,7 @@ data:extend({
     {
       type = "recipe",
       name = "constant-combinator",
-      categories = {"electromagnetics"},
+      categories = {"crafting-with-fluid","electromagnetics"},
       ingredients = {
         {type = "item", name = "copper-cable", amount = 3},
         {type = "item", name = "electronic-circuit", amount = 2},
@@ -1335,7 +1335,7 @@ data:extend({
     {
       type = "recipe",
       name = "power-switch",
-      categories = {"electromagnetics"},
+      categories = {"crafting-with-fluid","electromagnetics"},
       ingredients = {
         {type = "item", name = "medium-electric-pole", amount = 1},
         {type = "item", name = "copper-cable", amount = 3},
@@ -1771,7 +1771,7 @@ data:extend({
   {
     type = "recipe",
     name = "display-panel",
-    categories = {"electromagnetics"},
+    categories = {"crafting-with-fluid","electromagnetics"},
     ingredients = {
       {type = "item", name = "electronic-circuit", amount = 1},
       {type = "item", name = "small-lamp", amount = 1},
