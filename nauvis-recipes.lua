@@ -1963,7 +1963,6 @@ data:extend({
       {type = "item", name = "steel-plate", amount = 10},
       {type = "item", name = "solar-panel-equipment", amount = 1},
       {type = "item", name = "battery-equipment", amount = 1},
-      {type = "item", name = "battery-mk2-equipment", amount = 1},
       {type = "fluid", name = "sulfuric-acid", amount = 20}
     },
     results = {{type = "item", name = "energy-shield-equipment", amount = 1}},
