@@ -222,6 +222,37 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "atmospheric-rockets",
+        categories = {"chemistry", "cryogenics"},
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0.1
+        }
+        },
+        icon = "__serotonin-space-overhaul__/graphics/icons/vacuum-rockets.png",
+        enabled = true,
+        energy_required = 10,
+        ingredients =
+        {
+            {type = "item", name = "explosives", amount = 15},
+            {type = "item", name = "steel-plate", amount = 5},
+            {type = "item", name = "grenade", amount = 5},
+            {type = "item", name = "tungsten-plate", amount = 10},
+            {type = "fluid", name = "thruster-fuel", amount = 100},
+            {type = "fluid", name = "thruster-oxidizer", amount = 100},
+        },
+        results = {
+            {type="item", name="rocket", amount=50},
+            {type = "item", name = "tungsten-plate", amount = 10, independent_probability=0.99,ignored_by_productivity=10},
+            {type="fluid", name="steam", amount=60},
+            {type="fluid", name="crude-oil", amount=30},
+        },
+        main_product="rocket",
+    },
+    {
+        type = "recipe",
         name = "advanced-metallic-asteroid-crushing",
         localised_name = {"recipe-name.advanced-metallic-asteroid-crushing"},
         icon = "__space-age__/graphics/icons/advanced-metallic-asteroid-crushing.png",
