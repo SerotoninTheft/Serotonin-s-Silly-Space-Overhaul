@@ -190,9 +190,18 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "rocket",
+        name = "vacuum-rockets",
         categories = {"chemistry", "cryogenics"},
-        enabled = false,
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        icon = "__serotonin-space-overhaul__/graphics/icons/vacuum-rockets.png",
+        enabled = true,
         energy_required = 10,
         ingredients =
         {
