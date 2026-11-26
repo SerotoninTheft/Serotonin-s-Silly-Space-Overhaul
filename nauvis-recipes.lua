@@ -322,7 +322,7 @@ data:extend({
       name = "productivity-module-2",
       categories = {"crafting", "electromagnetics"},
       ingredients = {
-        {type = "item", name = "productivity-module", amount = 2},
+        {type = "item", name = "productivity-module", amount = 3},
         {type = "item", name = "processing-unit", amount = 3},
         {type = "item", name = "advanced-circuit", amount = 2},
         {type = "item", name = "solar-panel", amount = 1},
@@ -1155,6 +1155,7 @@ data:extend({
         {type = "item", name = "speed-module", amount = 1},
         {type = "item", name = "productivity-module", amount = 1},
         {type = "item", name = "efficiency-module", amount = 1},
+        {type = "item", name = "quality-module", amount = 1},
         {type = "item", name = "steel-plate", amount = 10},
         {type = "item", name = "advanced-circuit", amount = 10},
         {type = "item", name = "copper-cable", amount = 30}

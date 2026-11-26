@@ -275,6 +275,7 @@ data:extend({
       {type = "item", name = "superconductor", amount = 50},
       {type = "item", name = "supercapacitor", amount = 50},
       {type = "item", name = "speed-module-2", amount = 15},
+      {type = "item", name = "quality-module-2", amount = 15},
       {type = "item", name = "efficiency-module-2", amount = 15},
       {type = "item", name = "productivity-module-2", amount = 15}
 
