@@ -201,7 +201,7 @@ data:extend({
         }
         },
         icon = "__serotonin-space-overhaul__/graphics/icons/vacuum-rockets.png",
-        enabled = true,
+        enabled = false,
         energy_required = 10,
         ingredients =
         {
@@ -231,23 +231,17 @@ data:extend({
             min = 0.1
         }
         },
-        icon = "__serotonin-space-overhaul__/graphics/icons/vacuum-rockets.png",
-        enabled = true,
+        icon = "__serotonin-space-overhaul__/graphics/icons/atmospheric-rockets.png",
+        enabled = false,
         energy_required = 10,
         ingredients =
         {
             {type = "item", name = "explosives", amount = 15},
             {type = "item", name = "steel-plate", amount = 5},
             {type = "item", name = "grenade", amount = 5},
-            {type = "item", name = "tungsten-plate", amount = 10},
-            {type = "fluid", name = "thruster-fuel", amount = 100},
-            {type = "fluid", name = "thruster-oxidizer", amount = 100},
         },
         results = {
-            {type="item", name="rocket", amount=50},
-            {type = "item", name = "tungsten-plate", amount = 10, independent_probability=0.99,ignored_by_productivity=10},
-            {type="fluid", name="steam", amount=60},
-            {type="fluid", name="crude-oil", amount=30},
+            {type="item", name="rocket", amount=25},
         },
         main_product="rocket",
     },

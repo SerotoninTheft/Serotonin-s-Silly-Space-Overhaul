@@ -40,3 +40,5 @@ add_prerequisite("logistic-science-pack", "electric-mining-drill")
 table.insert(data.raw.technology["railgun"].effects, {type = "unlock-recipe", recipe = "yumako-microgravity-aeroponics"})
 table.insert(data.raw.technology["railgun"].effects, {type = "unlock-recipe", recipe = "jellynut-microgravity-aeroponics"})
 table.insert(data.raw.technology["railgun"].effects, {type = "unlock-recipe", recipe = "pentapod-astroculture"})
+
+data.raw.technology["rocketry"].effects = {{type = "unlock-recipe", recipe = "vacuum-rockets"},{type = "unlock-recipe", recipe = "atmospheric-rockets"},{type = "unlock-recipe", recipe = "rocket-launcher"}}
