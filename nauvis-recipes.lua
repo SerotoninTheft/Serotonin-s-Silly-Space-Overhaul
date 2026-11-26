@@ -2192,6 +2192,7 @@ data:extend({
       {type = "item", name = "electric-engine-unit", amount = 40},
       {type = "item", name = "low-density-structure", amount = 30},
       {type = "item", name = "speed-module-2", amount = 30},
+      {type = "item", name = "quality-module-2", amount = 30},
       {type = "item", name = "efficiency-module-2", amount = 30},
       {type = "item", name = "productivity-module-2", amount = 30},
       {type = "item", name = "power-armor", amount = 1}
