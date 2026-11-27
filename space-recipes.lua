@@ -432,7 +432,7 @@ data:extend({
         name = "yumako-microgravity-aeroponics",
         icon = "__serotonin-space-overhaul__/graphics/icons/yumako-aeroponics.png",
         categories = {"organic"},
-        subgroup = "space-processing",
+        subgroup = "astroculture",
         auto_recycle = false,
         enabled = false,
         ingredients =
@@ -464,7 +464,7 @@ data:extend({
         name = "jellynut-microgravity-aeroponics",
         icon = "__serotonin-space-overhaul__/graphics/icons/jellynut-aeroponics.png",
         categories = {"organic"},
-        subgroup = "space-processing",
+        subgroup = "astroculture",
         auto_recycle = false,
         enabled = false,
         ingredients =
@@ -496,7 +496,7 @@ data:extend({
         name = "pentapod-astroculture",
         icon = "__serotonin-space-overhaul__/graphics/icons/pentapod-astroculture.png",
         categories = {"organic"},
-        subgroup = "space-processing",
+        subgroup = "astroculture",
         auto_recycle = false,
         enabled = false,
         ingredients =
@@ -595,6 +595,139 @@ data:extend({
         tertiary = {r = 0.1, g = 0.1, b = 0.4, a = 1},
         quaternary = {r = 0, g = 0, b = 0.1, a = 1},
         }
+    },
+
+
+
+
+
+    {
+        type = "recipe",
+        name = "rudimentary-logistics-chest-microgravity-programming",
+        icon = "__serotonin-space-overhaul__/graphics/icons/rudimentary-logistics-chest-microgravity-programming.png",
+        categories = {"crafting"},
+        subgroup = "logistics",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+            {type = "item", name = "passive-provider-chest", amount = 3},
+            {type = "item", name = "storage-chest", amount = 2},
+        },
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        energy_required = 10,
+        results =
+        {
+            {type = "item", name = "steel-chest", amount = 5, shared_probability = { min = 0.00, max = 0.97 }},
+            {type = "item", name = "requester-chest", amount = 5, shared_probability = { min = 0.97, max = 0.98 }},
+            {type = "item", name = "active-provider-chest", amount = 5, shared_probability = { min = 0.98, max = 0.99 }},
+            {type = "item", name = "buffer-chest", amount = 5, shared_probability = { min = 0.99, max = 1 }},
+        },
+        allow_productivity = false,
+        allow_decomposition = false
+    },
+    {
+        type = "recipe",
+        name = "buffer-chest-microgravity-reprogramming",
+        icon = "__serotonin-space-overhaul__/graphics/icons/buffer-chest-microgravity-reprogramming.png",
+        categories = {"crafting"},
+        subgroup = "logistics",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+            {type = "item", name = "buffer-chest", amount = 3},
+            {type = "item", name = "storage-chest", amount = 2},
+        },
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        energy_required = 10,
+        results =
+        {
+            {type = "item", name = "steel-chest", amount = 5, shared_probability = { min = 0.00, max = 0.20 }},
+            {type = "item", name = "requester-chest", amount = 5, shared_probability = { min = 0.20, max = 0.40 }},
+            {type = "item", name = "active-provider-chest", amount = 5, shared_probability = { min = 0.40, max = 0.60 }},
+            {type = "item", name = "buffer-chest", amount = 5, shared_probability = { min = 0.60, max = 1 }},
+        },
+        allow_productivity = false,
+        allow_decomposition = false
+    },
+    {
+        type = "recipe",
+        name = "requester-chest-microgravity-reprogramming",
+        icon = "__serotonin-space-overhaul__/graphics/icons/requester-chest-microgravity-reprogramming.png",
+        categories = {"crafting"},
+        subgroup = "logistics",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+            {type = "item", name = "requester-chest", amount = 3},
+            {type = "item", name = "storage-chest", amount = 2},
+        },
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        energy_required = 10,
+        results =
+        {
+            {type = "item", name = "steel-chest", amount = 5, shared_probability = { min = 0.00, max = 0.20 }},
+            {type = "item", name = "buffer-chest", amount = 5, shared_probability = { min = 0.20, max = 0.40 }},
+            {type = "item", name = "active-provider-chest", amount = 5, shared_probability = { min = 0.40, max = 0.60 }},
+            {type = "item", name = "requester-chest", amount = 5, shared_probability = { min = 0.60, max = 1 }},
+        },
+        allow_productivity = false,
+        allow_decomposition = false
+    },
+    {
+        type = "recipe",
+        name = "active-provider-chest-microgravity-reprogramming",
+        icon = "__serotonin-space-overhaul__/graphics/icons/active-provider-chest-microgravity-reprogramming.png",
+        categories = {"crafting"},
+        subgroup = "logistics",
+        auto_recycle = false,
+        enabled = false,
+        ingredients =
+        {
+            {type = "item", name = "active-provider-chest", amount = 3},
+            {type = "item", name = "storage-chest", amount = 2},
+        },
+        surface_conditions =
+        {
+        {
+            property = "gravity",
+            min = 0,
+            max = 0
+        }
+        },
+        energy_required = 10,
+        results =
+        {
+            {type = "item", name = "steel-chest", amount = 5, shared_probability = { min = 0.00, max = 0.20 }},
+            {type = "item", name = "buffer-chest", amount = 5, shared_probability = { min = 0.20, max = 0.40 }},
+            {type = "item", name = "requester-chest", amount = 5, shared_probability = { min = 0.40, max = 0.60 }},
+            {type = "item", name = "active-provider-chest", amount = 5, shared_probability = { min = 0.60, max = 1 }},
+        },
+        allow_productivity = false,
+        allow_decomposition = false
     },
 
 })

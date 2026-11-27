@@ -106,3 +106,4 @@ table.insert(data.raw.technology["advanced-circuit"].effects, {type = "unlock-re
 data.raw.technology["rocketry"].effects = {{type = "unlock-recipe", recipe = "vacuum-rockets"},{type = "unlock-recipe", recipe = "atmospheric-rockets"},{type = "unlock-recipe", recipe = "rocket-launcher"}}
 data.raw.technology["logistics-2"].effects = {{type = "unlock-recipe", recipe = "fast-transport-belt"},{type = "unlock-recipe", recipe = "fast-underground-belt"}}
 data.raw.technology["heating-tower"].effects = {{type = "unlock-recipe", recipe = "heating-tower"}}
+data.raw.technology["logistic-system"].effects = {{type = "unlock-recipe", recipe = "active-provider-chest-microgravity-reprogramming"},{type = "unlock-recipe", recipe = "requester-chest-microgravity-reprogramming"},{type = "unlock-recipe", recipe = "buffer-chest-microgravity-reprogramming"},{type = "unlock-recipe", recipe = "rudimentary-logistics-chest-microgravity-programming"}}
