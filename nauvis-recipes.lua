@@ -1907,7 +1907,7 @@ data:extend({
       {type = "item", name = "fast-transport-belt", amount = 1},
       {type = "fluid", name = "sulfuric-acid", amount = 30}
     },
-    results = {{type = "item", name = "belt-immunity-equipment", amount = 1}},
+    results = {{type = "item", name = "belt-immunity-equipment", amount = 4}},
     allow_productivity = true,
     enabled = false,
   },
